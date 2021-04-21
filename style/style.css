@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#334d50), to(#cbcaa5));
+  background: linear-gradient(to right, #334d50, #cbcaa5);
+  font-weight: 400;
+  color: #333;
+}
+
+.grid {
+  position: absolute;
+  width: 120rem;
+  height: 60rem;
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+section {
+  padding: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+section h2 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+section .score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+section .current {
+  background-color: #4e2020;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+section .current :first-child {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+section .current :last-child {
+  font-size: 3.5rem;
+}
+
+.player--active {
+  background-color: rgba(177, 169, 169, 0.4);
+}
+
+.winner {
+  background: #000;
+  color: #fff;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 8rem;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--new {
+  top: 4rem;
+}
+
+.btn--roll {
+  top: 39.3rem;
+}
+
+.btn--hold {
+  top: 46.1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.player--winner {
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 10rem;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  width: 60%;
+  height: 30%;
+  padding: 2rem;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.modal .close {
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #fff;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
